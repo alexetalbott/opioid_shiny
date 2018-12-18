@@ -1,0 +1,34 @@
+---
+title: "Opioid Epidemic Shiny Dashboard"
+author: "Alex Talbott"
+date: "December 18, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+This shiny dashboard is to be used to explore the opioid epidemic in the United States. You can view the project at  <https://opioidsalex.shinyapps.io/opioids_dashboard/>. Using this dashboard, you can:
+
+* see how drug related overdoses changed over time by state
+* see the most dangerous states for drug overdose deaths for 2014 and 2016
+* see how opioid prescription volume changed over time
+
+
+## Data
+
+This project is based on this kaggle dataset: <https://www.kaggle.com/apryor6/us-opiate-prescriptions>.
+
+Additional data from the original data source was acquired from the Centers for Medicare and Medicaid Services at <https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Part-D-Prescriber.html>..
+
+
+## Usage
+
+The sidebar filter persists across two tabs. You can choose between the year 2014 and 2016 to view the data for that specific year.
+
+The first tab provides views of overdose-related deaths, both from an overall and a per capita (100,000 people) view. This tab has an additional filter that allows you to filter by a minimum number of opioid deaths for the selected year. 
+
+The second tab shows the volume of opioid prescriptions, both from an overall view and per capita (100 people) view. Use the dropdown to select a single state to examine.
